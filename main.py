@@ -5,12 +5,7 @@
 import requests
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-def get():
+def get_messages():
     response = requests.get('https://www.example.com')
     print(response.status_code)
     print(response.text)
@@ -18,7 +13,12 @@ def get():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-    get()
+
+    while True:
+        command = input()
+        if command == 'get':
+            get_messages()
+        elif command == 'exit':
+            break
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
