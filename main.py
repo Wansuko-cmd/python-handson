@@ -60,6 +60,9 @@ def main():
         elif command == 'exit':
             break
 
+        else:
+            print('available commands: get, create, update, delete, exit')
+
 if __name__ == '__main__':
     main()
 
