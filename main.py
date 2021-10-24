@@ -33,31 +33,31 @@ def delete_message(message_id: str):
 
 
 # Press the green button in the gutter to run the script.
-# def main():
-if __name__ == '__main__':
+def main():
+    if __name__ == '__main__':
 
-    while True:
-        command = input('command: ')
+        while True:
+            command = input('command: ')
 
-        if command == 'get':
-            get_messages()
+            if command == 'get':
+                get_messages()
 
-        elif command == 'create':
-            user_name = input('user_name: ')
-            text = input('text: ')
-            create_messages(user_name, text)
+            elif command == 'create':
+                user_name = input('user_name: ')
+                text = input('text: ')
+                create_messages(user_name, text)
 
-        elif command == 'update':
-            message_id = input('id: ')
-            user_name = input('user_name: ')
-            text = input('text: ')
-            update_message(message_id, user_name, text)
+            elif command == 'update':
+                message_id = input('id: ')
+                user_name = input('user_name: ')
+                text = input('text: ')
+                update_message(message_id, user_name, text)
 
-        elif command == 'delete':
-            message_id = input('id: ')
-            delete_message(message_id)
+            elif command == 'delete':
+                message_id = input('id: ')
+                delete_message(message_id)
 
-        elif command == 'exit':
-            break
+            elif command == 'exit':
+                break
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
